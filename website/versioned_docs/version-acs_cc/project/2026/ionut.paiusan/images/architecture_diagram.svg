@@ -1,0 +1,124 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="13">
+
+  <!-- White background -->
+  <rect width="900" height="620" fill="white"/>
+
+  <!-- Title -->
+  <text x="30" y="45" font-size="26" font-weight="bold" fill="#111">Architecture</text>
+  <text x="30" y="68" font-size="12" fill="#555">Multi-Sensor Signal Copier — STM32 NUCLEO-U545RE-Q</text>
+
+  <!-- ─────────────────────────────────────── -->
+  <!-- BOXES -->
+  <!-- ─────────────────────────────────────── -->
+
+  <!-- STM32 Nucleo (center) -->
+  <rect x="330" y="245" width="200" height="85" fill="white" stroke="#222" stroke-width="2" rx="5"/>
+  <text x="430" y="273" text-anchor="middle" fill="#111" font-weight="bold">STM32 Nucleo Board</text>
+  <text x="430" y="292" text-anchor="middle" fill="#111" font-size="11">(Processing Unit)</text>
+  <text x="430" y="310" text-anchor="middle" fill="#444" font-size="10">NUCLEO-U545RE-Q</text>
+  <text x="430" y="324" text-anchor="middle" fill="#444" font-size="9">Cortex-M33 · Embassy Async</text>
+
+  <!-- IR Receiver (top left) -->
+  <rect x="60" y="80" width="155" height="58" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="137" y="105" text-anchor="middle" fill="#111">IR Receiver</text>
+  <text x="137" y="123" text-anchor="middle" fill="#111" font-size="11">TSOP38038 · 38 kHz</text>
+  <text x="137" y="136" text-anchor="middle" fill="#555" font-size="10">D2/PC8 · GPIO Input</text>
+
+  <!-- IR Emitter (top center-left) -->
+  <rect x="250" y="80" width="155" height="58" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="327" y="105" text-anchor="middle" fill="#111">IR Emitter</text>
+  <text x="327" y="123" text-anchor="middle" fill="#111" font-size="11">KY-005 · 38 kHz PWM</text>
+  <text x="327" y="136" text-anchor="middle" fill="#555" font-size="10">D3/PB3 · TIM2_CH2</text>
+
+  <!-- RC522 RFID (top right) -->
+  <rect x="490" y="80" width="155" height="58" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="567" y="105" text-anchor="middle" fill="#111">RC522 RFID</text>
+  <text x="567" y="123" text-anchor="middle" fill="#111" font-size="11">MFRC522 · ISO 14443-A</text>
+  <text x="567" y="136" text-anchor="middle" fill="#555" font-size="10">SPI1 · 1 MHz · 3.3V</text>
+
+  <!-- PN532 NFC (far right) -->
+  <rect x="690" y="80" width="155" height="58" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="767" y="105" text-anchor="middle" fill="#111">PN532 NFC</text>
+  <text x="767" y="123" text-anchor="middle" fill="#111" font-size="11">PN532 · ISO 14443-A</text>
+  <text x="767" y="136" text-anchor="middle" fill="#555" font-size="10">I2C1 · addr 0x24</text>
+
+  <!-- Buttons (left) -->
+  <rect x="60" y="245" width="210" height="85" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="165" y="268" text-anchor="middle" fill="#111" font-weight="bold">Push Buttons (×4)</text>
+  <text x="165" y="286" text-anchor="middle" fill="#111" font-size="11">COPY · RECREATE</text>
+  <text x="165" y="302" text-anchor="middle" fill="#111" font-size="11">SEL RIGHT · SEL LEFT</text>
+  <text x="165" y="320" text-anchor="middle" fill="#555" font-size="10">Active-Low · Internal Pull-Up</text>
+
+  <!-- Mode LEDs (right) -->
+  <rect x="630" y="245" width="200" height="85" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="730" y="268" text-anchor="middle" fill="#111" font-weight="bold">Mode LEDs (×3)</text>
+  <text x="730" y="286" text-anchor="middle" fill="#111" font-size="11">🔴 Red = IR Mode (A3/PB0)</text>
+  <text x="730" y="302" text-anchor="middle" fill="#111" font-size="11">🟢 Green = RFID (A4/PC1)</text>
+  <text x="730" y="320" text-anchor="middle" fill="#555" font-size="10">🔵 Blue = NFC (A5/PC0)</text>
+
+  <!-- RGB Status LED (bottom right) -->
+  <rect x="630" y="415" width="200" height="70" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="730" y="438" text-anchor="middle" fill="#111" font-weight="bold">RGB Status LED</text>
+  <text x="730" y="456" text-anchor="middle" fill="#111" font-size="11">Copy/Replay indicator</text>
+  <text x="730" y="472" text-anchor="middle" fill="#555" font-size="10">D6/PB10 · D9/PC6 · D1/PA10</text>
+
+  <!-- USB / PC (bottom left) -->
+  <rect x="60" y="415" width="210" height="70" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="165" y="438" text-anchor="middle" fill="#111" font-weight="bold">USB-C / Host PC</text>
+  <text x="165" y="456" text-anchor="middle" fill="#111" font-size="11">Flash + Debug</text>
+  <text x="165" y="472" text-anchor="middle" fill="#555" font-size="10">ST-LINK/V3 · probe-rs</text>
+
+  <!-- Power Supply (bottom center) -->
+  <rect x="325" y="415" width="210" height="70" fill="white" stroke="#222" stroke-width="1.5" rx="4"/>
+  <text x="430" y="438" text-anchor="middle" fill="#111" font-weight="bold">Power (3.3V Rail)</text>
+  <text x="430" y="456" text-anchor="middle" fill="#111" font-size="11">From USB via Nucleo</text>
+  <text x="430" y="472" text-anchor="middle" fill="#555" font-size="10">IR · RC522 · PN532 · LEDs</text>
+
+  <!-- ─────────────────────────────────────── -->
+  <!-- ARROWS -->
+  <!-- ─────────────────────────────────────── -->
+
+  <!-- IR Receiver → Nucleo (GPIO, diagonal right-down) -->
+  <line x1="215" y1="120" x2="330" y2="268" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="248" y="185" font-size="10" fill="#444">GPIO</text>
+
+  <!-- IR Emitter → Nucleo (PWM, straight down) -->
+  <line x1="380" y1="138" x2="400" y2="243" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="384" y="195" font-size="10" fill="#444">PWM</text>
+
+  <!-- RC522 → Nucleo (SPI, diagonal left-down) -->
+  <line x1="530" y1="138" x2="490" y2="243" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="527" y="195" font-size="10" fill="#444">SPI</text>
+
+  <!-- PN532 → Nucleo (I2C, far right diagonal down) -->
+  <line x1="730" y1="138" x2="532" y2="268" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="665" y="190" font-size="10" fill="#444">I2C</text>
+
+  <!-- Buttons → Nucleo (right) -->
+  <line x1="270" y1="287" x2="328" y2="287" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="279" y="280" font-size="10" fill="#444">GPIO</text>
+
+  <!-- Nucleo → Mode LEDs (right) -->
+  <line x1="530" y1="287" x2="628" y2="287" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="546" y="280" font-size="10" fill="#444">GPIO</text>
+
+  <!-- Nucleo → RGB Status LED (diagonal right-down) -->
+  <line x1="530" y1="310" x2="628" y2="430" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="567" y="375" font-size="10" fill="#444">GPIO</text>
+
+  <!-- USB → Nucleo (diagonal right-up) -->
+  <line x1="210" y1="430" x2="330" y2="310" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="235" y="368" font-size="10" fill="#444">USB</text>
+
+  <!-- Power → Nucleo (up) -->
+  <line x1="430" y1="413" x2="430" y2="332" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="436" y="378" font-size="10" fill="#444">3.3V</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+      <path d="M1,1 L1,7 L8,4 z" fill="#222"/>
+    </marker>
+  </defs>
+
+</svg>
